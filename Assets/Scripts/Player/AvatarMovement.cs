@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-[RequireComponent(typeof(GroundCheck))]
+[RequireComponent(typeof(GroundChecker))]
 public class AvatarMovement : MonoBehaviour
 {
     public FloatingJoystick joystick;
@@ -11,7 +11,7 @@ public class AvatarMovement : MonoBehaviour
     public float impulseForce;
 
     private Rigidbody rigid;
-    private GroundCheck groundCheck;
+    private GroundChecker groundCheck;
     public Vector3 Velocity { get; private set; }
 
     [Header("Drag")]
@@ -23,7 +23,7 @@ public class AvatarMovement : MonoBehaviour
     void Awake()
     {
         rigid = GetComponent<Rigidbody>();
-        groundCheck = GetComponent<GroundCheck>();
+        groundCheck = GetComponent<GroundChecker>();
         Velocity = new Vector3(0, 0, 0);
     }
 

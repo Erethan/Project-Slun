@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GroundCheck : MonoBehaviour
+public class GroundChecker : MonoBehaviour
 {
     public CapsuleCollider capsuleCollider;
     [Range(0, 0.1f)] public float groundCheckTolerance = 0.01f;
