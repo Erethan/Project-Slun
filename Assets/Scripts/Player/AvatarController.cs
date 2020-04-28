@@ -37,7 +37,7 @@ public class AvatarController : MonoBehaviour
         SetDeathState(false);
     }
 
-    public void Kill()
+    public void HazardHit()
     {
         SetDeathState(true);
     }
