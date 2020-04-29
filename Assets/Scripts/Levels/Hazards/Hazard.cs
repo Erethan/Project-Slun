@@ -6,10 +6,10 @@ public class Hazard : MonoBehaviour
 {
     public void HazardHit(GameObject hitGameObject)
     {
-        AvatarController avatar = hitGameObject.GetComponent<AvatarController>();
-        if(avatar != null)
+        AvatarController avatarHit = hitGameObject.GetComponent<AvatarController>();
+        if(avatarHit != null)
         {
-            avatar.HazardHit();
+            avatarHit.HazardHit();
         }
     }
 }

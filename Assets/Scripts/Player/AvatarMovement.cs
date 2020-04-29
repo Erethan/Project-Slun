@@ -29,9 +29,10 @@ public class AvatarMovement : MonoBehaviour
 
     void Update()
     {
-        if (Velocity.sqrMagnitude > 0.1f)
+        Vector3 xOzVelocity = Vector3.ProjectOnPlane(Velocity, Vector3.up);
+        if (xOzVelocity.sqrMagnitude > 0.1f)
         {
-            transform.forward = Vector3.ProjectOnPlane(Velocity, Vector3.up);
+            transform.forward = Vector3.ProjectOnPlane(xOzVelocity, Vector3.up);
         }
     }
 
@@ -46,7 +47,7 @@ public class AvatarMovement : MonoBehaviour
             Vector3 planeDir = Vector3.ProjectOnPlane(inputAxis, groundCheck.GroundNormal);
             planeDir.Normalize();
 
-            if(Velocity.sqrMagnitude < targetSpeed * targetSpeed)
+            if (Velocity.sqrMagnitude < targetSpeed * targetSpeed)
             {
                 rigid.AddForce(planeDir * impulseForce * inputAxis.magnitude, ForceMode.Impulse);
             }
