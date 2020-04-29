@@ -4,12 +4,9 @@ using UnityEngine;
 
 public class Hazard : MonoBehaviour
 {
-    public void HazardHit(GameObject hitGameObject)
+    public void HazardHit(Avatar avatarHit)
     {
-        AvatarController avatarHit = hitGameObject.GetComponent<AvatarController>();
-        if(avatarHit != null)
-        {
-            avatarHit.HazardHit();
-        }
+        avatarHit.GetComponent
+        avatarHit.HazardHit();
     }
 }
