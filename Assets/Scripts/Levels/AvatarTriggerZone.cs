@@ -1,4 +1,5 @@
 ﻿using UnityEngine.Events;
+using Pulse.Experimental;
 
 [System.Serializable]
 public class AvatarUnityEvent : UnityEvent<AvatarController> { }
