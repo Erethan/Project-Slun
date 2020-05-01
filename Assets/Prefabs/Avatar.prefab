@@ -169,12 +169,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4910477083023755871}
   - component: {fileID: 4910477083023755870}
-  - component: {fileID: 4910477083023755857}
   - component: {fileID: 4910477083023755868}
   - component: {fileID: 4910477083023755869}
+  - component: {fileID: 4910477083023755857}
   - component: {fileID: 4910477083023755856}
   - component: {fileID: 4910477083023755859}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Avatar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -211,25 +211,6 @@ MonoBehaviour:
   onDeathAnimationFinish:
     m_PersistentCalls:
       m_Calls: []
---- !u!95 &4910477083023755857
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4910477083023755858}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 257139812ee4c2a4c86fb75242259d95, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &4910477083023755868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,6 +244,25 @@ MonoBehaviour:
   capsuleCollider: {fileID: 4910477083023755856}
   groundCheckTolerance: 0.01
   sphereCastProportion: 1
+--- !u!95 &4910477083023755857
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4910477083023755858}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 257139812ee4c2a4c86fb75242259d95, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!136 &4910477083023755856
 CapsuleCollider:
   m_ObjectHideFlags: 0
