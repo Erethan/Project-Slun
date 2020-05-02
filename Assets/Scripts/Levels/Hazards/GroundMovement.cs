@@ -52,5 +52,5 @@ public class GroundMovement : MonoBehaviour
 
     public void SetDirection(Vector3 direction) => this.direction.Set(direction.x, direction.y, direction.z);
     public void SetDirection(float x, float y, float z) => this.direction.Set(x,y,z);
-
+    public void ResetVelocity() => rigid.velocity = Vector3.zero;
 }
