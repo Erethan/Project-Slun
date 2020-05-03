@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/LeonWorjshop.unity
+    guid: ddd53db4ab5ad394a8265b2c0f1fc6b9
+  - enabled: 0
     path: Assets/Scenes/WorkshopScene.unity
     guid: 48f447b9ad56f984097d58e31e84ac0a
   m_configObjects: {}
