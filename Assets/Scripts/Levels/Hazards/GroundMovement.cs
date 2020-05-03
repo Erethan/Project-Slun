@@ -44,7 +44,7 @@ public class GroundMovement : MonoBehaviour
 
             if (Velocity.sqrMagnitude < targetSpeed * targetSpeed)
             {
-                rigid.AddForce(planeDir * impulseForce * direction.magnitude, ForceMode.Impulse);
+                rigid.AddForce(planeDir * impulseForce, ForceMode.Impulse);
             }
         }
     }

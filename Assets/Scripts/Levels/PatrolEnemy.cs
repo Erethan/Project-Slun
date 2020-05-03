@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 
 public class PatrolEnemy : MonoBehaviour
 {
@@ -45,6 +47,8 @@ public class PatrolEnemy : MonoBehaviour
     }
 }
 
+#if UNITY_EDITOR
+
 [CustomEditor(typeof(PatrolEnemy))]
 public class PatrolEnemyEditor : Editor
 {
@@ -67,3 +71,4 @@ public class PatrolEnemyEditor : Editor
         }
     }
 }
+#endif
